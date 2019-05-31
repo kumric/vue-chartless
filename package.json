@@ -1,9 +1,10 @@
 {
   "name": "vue-chartless",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "100% Simplest reactive charts for the Vue.js",
   "author": "Nikola Kumric",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rollup -c --environment BUILD:production",
@@ -21,6 +22,10 @@
     "simplest",
     "component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumric/vue-chartless.git"
+  },
   "dependencies": {
     "vue": "^2.6.10",
     "vue-c3": "^1.2.11"
