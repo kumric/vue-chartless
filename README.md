@@ -1,29 +1,42 @@
-# chartless2
-
-## Project setup
+## Install
 ```
-npm install
+npm i vue-chartless
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Basic usage
+
+```html
+<!-- Vue component -->
+<template>
+    <div>
+        <Chart 
+            :def="def"
+            :data="data"
+        ></Chart>
+    </div>
+</template>
+
+<script>
+import Chart from 'vue-chartless'
+
+export default {
+    components: {
+      Chart
+    },
+    data: () => ({
+        def : {
+            type : 'pie'
+        },
+        data : [
+            { label: 'London', value:'330' },
+            { label: 'Barcelona', value:'430' },
+            { label: 'Paris', value:'150' },
+            { label: 'Belgrade', value:'220' }
+        ]
+    })
+}
+</script>
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Supported types
+* pie
