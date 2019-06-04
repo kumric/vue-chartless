@@ -1,6 +1,7 @@
 <template>
     <div>
         <Pie v-if="def.type == 'pie'" :data="data"></Pie>
+        <Bar v-if="def.type == 'bar'" :data="data"></Bar>
         <div v-else>
             <h2>This type will probably come in the next versions.</h2>
             <p>Stay tuned. Thank you.</p>
@@ -11,11 +12,13 @@
 
 <script>
 import Pie from './Pie.vue'
+import Bar from './Bar.vue'
 
     export default {
         name: 'Chartless',
         components: {
-            Pie
+            Pie,
+            Bar
         },
         props: {
             def: {
@@ -26,16 +29,23 @@ import Pie from './Pie.vue'
                 type: Array,
                 required: true
             }
-        }
+        },
+        data() {
+          return {
+            // def: { type:'pie' },
+            // data: [
+            //   { label: 'London', value:'330' },
+            //   { label: 'Barcelona', value:'430' },
+            //   { label: 'Paris', value:'150' },
+            //   { label: 'Belgrade', value:'220' },
+            // ]
+          }
+        },
     }
 </script>
 
 <style>
 /* Chart C3 global */
-.c3-chart-arc.c3-target g path {
-  opacity: .8;
-}
-
 .c3-chart-arc path {
   stroke: #fff;
   z-index: 1000000000000;
@@ -53,10 +63,6 @@ import Pie from './Pie.vue'
 .c3-chart-arc.c3-target.c3-focused g path {
   opacity: 1;
   cursor: default !important;
-}
-
-.c3-chart-arc.c3-target g path {
-  opacity: .8;
 }
 
 .c3-target.c3-defocused {
@@ -103,5 +109,9 @@ import Pie from './Pie.vue'
 
 .c3-tooltip .value {
   text-align: right;
+}
+
+.c3-tooltip-container .c3-tooltip tbody {
+    display: flex !important;
 }
 </style>

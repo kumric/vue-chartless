@@ -128,7 +128,3 @@ import $ from "jquery";
         }
     }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
