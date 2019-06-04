@@ -1,6 +1,6 @@
 {
   "name": "vue-chartless",
-  "version": "0.1.2",
+  "version": "0.1.21",
   "description": "100% Simplest reactive charts for the Vue.js",
   "author": "Nikola Kumric",
   "private": false,
