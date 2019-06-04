@@ -3,8 +3,8 @@
         <Pie v-if="def.type == 'pie'" :data="data"></Pie>
         <Bar v-else-if="def.type == 'bar'" :data="data"></Bar>
         <div v-else>
-            <h2>This type will probably come in the next versions.</h2>
-            <p>Stay tuned. Thank you.</p>
+            <!-- <h2>This type will probably come in the next versions.</h2>
+            <p>Stay tuned. Thank you.</p> -->
         </div>
         
     </div>
