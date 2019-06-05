@@ -42,4 +42,4 @@ export default {
 * pie
 * bar
 
-![alt text](https://s3.eu-west-1.amazonaws.com/kumricbucket/chart123.png)
+![alt text](https://kumricbucket.s3-eu-west-1.amazonaws.com/chart114.png)
