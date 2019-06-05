@@ -1,5 +1,5 @@
 <template>
-    <div class="bar-container">
+    <div class="c3-bar-container">
         <vue-c3 :handler="handler"></vue-c3>
     </div>
 </template>
@@ -129,10 +129,11 @@ export default {
   fill-opacity: 0.8;
 }
 
-.c3 path {
+.c3-bar-container path {
   fill: none;
   stroke-width: 1;
-  stroke: #000;
+  stroke: #969696;
+  /* stroke: #000; */
 }
 
 .c3-event-rect {
