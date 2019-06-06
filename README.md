@@ -1,4 +1,4 @@
-## Install
+## Instalal
 ```
 npm i vue-chartless
 ```
